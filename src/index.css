@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+.mySwiper .swiper-button-prev {
+  color:#fff;
+  background-image: url(/public/images/arrow-right.png);
+  padding: 30px 30px
+}
+.mySwiper .swiper-button-next {
+  color:#fff;
+  background-image: url(/public/images/arrow-left.png);
+  padding: 30px 30px
+}
+.swiper-button-next:after{font-size: 0px;}
+.swiper-button-prev:after{font-size: 0px;}
+
+.mySwiper .swiper-pagination-bullet{
+  background:#fff;
+  width:15px;
+  height:15px
+}
+
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700 */
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.lora-Regular {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* html,body{font-family: "Lato", sans-serif;} */
+
+.tabbgch .bg-default-100{background-color:none !important}
+.tabclass {
+  margin-right: 80px;
+}
+.tabclass1{
+  margin-right: 0px;
+}
+div#react-aria1476874308-\:rr\: {
+  background-color: #fff;
+}
+.group[data-selected=true] .group-data-\[selected\=true\]\:text-default-foreground{border:none}
+
+/* .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 200px)};
+  .swiper.swiper-initialized.swiper-horizontal.swiper-css-mode.mySwiper .swiper-button-next {
+    color: #fff !important;
+} */
+
