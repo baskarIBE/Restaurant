@@ -9,7 +9,7 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, DropdownItem, Drop
 export default function Header() {
   return (
     <header>
-        <div className="bg-[#E24622] py-6">
+        <div className="py-6 bg-[#E24622]">
             <div>
               <Navbar className="bg-transparent backdrop-blur-none">
                   {/* <NavbarBrand>
@@ -92,6 +92,11 @@ export default function Header() {
                               </DropdownItem>
                           </DropdownMenu>
                       </Dropdown>
+                      <NavbarItem>
+                          <Link color="foreground" className="text-white lato-bold" href="#">
+                          <span className="border rounded-full py-1 px-3">0</span><img className="mx-auto" src="images/shopping-cart.png" alt="" />
+                          </Link>
+                      </NavbarItem>
                   </NavbarContent>
               </Navbar>
 

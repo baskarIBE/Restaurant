@@ -2,6 +2,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../components/Home/Home";
 import Main from "../core/Main/Main";
 import Reservation from "../components/Reservation/Reservation";
+import Contactus from "../components/Contactus/Contactus";
+import Login from "../components/Login/Login";
+import Registration from "../components/Registration/Registration";
+import Faq from "../components/Faq/Faq";
 
 export default function Approuter() {
   return (
@@ -11,6 +15,10 @@ export default function Approuter() {
           <Route path="" element={<Home />} />
             <Route element={<Main />}>
                   <Route path="reservation" element={<Reservation/>}/>
+                  <Route path="Contactus" element={<Contactus />}/>
+                  <Route path="login" element={<Login />}/>
+                  <Route path="registration" element={<Registration />}/>
+                  <Route path="faq" element={<Faq />}/>
               </Route>
           </Routes>
       </BrowserRouter>

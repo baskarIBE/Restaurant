@@ -156,8 +156,8 @@ export default function Home() {
             <h1 className="text-white text-[36px] pb-[2rem] leading-[5rem] lato-black tracking-[3px]">"Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!"</h1>
             <h2 className="text-[white] flex justify-center items-center text-[38px] pb-[2rem] lato-black tracking-[3px]"><span className="bg-[url('images/phone-call.png')] bg-center bg-no-repeat p-[35px]"></span>TEL: 1 (234) 5555</h2>
             <div className="flex justify-center mb-[4rem]">
-            <button className="py-2 px-2 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px]">BOOK A TABLE</button>
-            <button className="py-2 px-2 bg-[#000] text-white rounded-[10px] text-[28px] lato-black tracking-[3px]">ORDER ONLINE</button>
+            <button className="py-3 px-5 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px] hover:bg-[#fff] hover:text-[#EB3224]">BOOK A TABLE</button>
+            <button className="py-3 px-5 bg-[#000] text-white rounded-[10px] text-[28px] lato-black tracking-[3px] hover:bg-[#fff] hover:text-[#000]">ORDER ONLINE</button>
           </div>
           </div>
         </SwiperSlide>
@@ -237,8 +237,7 @@ export default function Home() {
                     <Tab className="bg-noun lora font-bold text-[28px] text-[#000] tabclass" key="BRUNCH" title="BRUNCH">
                       <Card>
                         <CardBody>
-                    
-
+                    {/* tab contened start */}
                     {/* <div className="grid grid-cols-2 gap-4"> */}
                     <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 gap-4">
 
@@ -507,11 +506,10 @@ export default function Home() {
                         </ul>
                       </div>
                     </div>
-                      
 
                     </div>
                     
-
+{/* tab contened end */}
 
 
 
@@ -522,28 +520,1116 @@ export default function Home() {
                     <Tab key="LUNCH MENU" title="LUNCH MENU" className="lora font-bold text-[28px] text-[#000] tabclass">
                       <Card>
                         <CardBody>
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          {/* tab contened start */}
+                    {/* <div className="grid grid-cols-2 gap-4"> */}
+                    <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 gap-4">
+
+
+<div className="float-left row-span-1">
+  <div className="border rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular font-normal">Entrees</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1 align-self">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal ">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div className="float-left row-span-2">
+  <div className="border bg-[#E7F0F3] rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Organic Pastas</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra Aglio e Olio</h4>
+          <p className="text-[17px] lato-light font-[300]">olive oil, garlic, chili, Grana Padano (add anchovy 2.00)</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Bucatini All’ Amatriciana</h4>
+          <p className="text-[17px] lato-light font-[300]">tomato, red onion, guanciale, chili, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Toasted Spaghetti with Clams & Shrimp</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra al Pomodoro</h4>
+          <p className="text-[17px] lato-light font-[300]">tomatoes, garlic, basil, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Canestri Cacio e Pepe</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Lasagna Verde Bolognese</h4>
+          <p className="text-[17px] lato-light font-[300]">bechamel, mozzarella, grana padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div className="float-left row-span-3">
+  <div className="border bg-[#E7F0F3] rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Organic Pastas</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra Aglio e Olio</h4>
+          <p className="text-[17px] lato-light font-[300]">olive oil, garlic, chili, Grana Padano (add anchovy 2.00)</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Bucatini All’ Amatriciana</h4>
+          <p className="text-[17px] lato-light font-[300]">tomato, red onion, guanciale, chili, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Toasted Spaghetti with Clams & Shrimp</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra al Pomodoro</h4>
+          <p className="text-[17px] lato-light font-[300]">tomatoes, garlic, basil, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Canestri Cacio e Pepe</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Lasagna Verde Bolognese</h4>
+          <p className="text-[17px] lato-light font-[300]">bechamel, mozzarella, grana padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div className="float-left row-span-4">
+  <div className="border rounded-xl p-[2rem] min-h-0">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Entrees</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] font-normal lato-regular">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] font-[300] lato-light">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="lato-light text-[17px] inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+{/* tab contened end */}
                         </CardBody>
                       </Card>  
                     </Tab>
                     <Tab key="DINNER MENU" title="DINNER MENU" className="lora font-bold text-[28px] text-[#000] tabclass">
                       <Card>
                         <CardBody>
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                         {/* tab contened start */}
+                    {/* <div className="grid grid-cols-2 gap-4"> */}
+                    <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 gap-4">
+
+
+<div className="float-left row-span-1">
+  <div className="border rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular font-normal">Entrees</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1 align-self">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal ">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div className="float-left row-span-2">
+  <div className="border bg-[#E7F0F3] rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Organic Pastas</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra Aglio e Olio</h4>
+          <p className="text-[17px] lato-light font-[300]">olive oil, garlic, chili, Grana Padano (add anchovy 2.00)</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Bucatini All’ Amatriciana</h4>
+          <p className="text-[17px] lato-light font-[300]">tomato, red onion, guanciale, chili, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Toasted Spaghetti with Clams & Shrimp</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra al Pomodoro</h4>
+          <p className="text-[17px] lato-light font-[300]">tomatoes, garlic, basil, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Canestri Cacio e Pepe</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Lasagna Verde Bolognese</h4>
+          <p className="text-[17px] lato-light font-[300]">bechamel, mozzarella, grana padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div className="float-left row-span-3">
+  <div className="border bg-[#E7F0F3] rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Organic Pastas</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra Aglio e Olio</h4>
+          <p className="text-[17px] lato-light font-[300]">olive oil, garlic, chili, Grana Padano (add anchovy 2.00)</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Bucatini All’ Amatriciana</h4>
+          <p className="text-[17px] lato-light font-[300]">tomato, red onion, guanciale, chili, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Toasted Spaghetti with Clams & Shrimp</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra al Pomodoro</h4>
+          <p className="text-[17px] lato-light font-[300]">tomatoes, garlic, basil, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Canestri Cacio e Pepe</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Lasagna Verde Bolognese</h4>
+          <p className="text-[17px] lato-light font-[300]">bechamel, mozzarella, grana padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div className="float-left row-span-4">
+  <div className="border rounded-xl p-[2rem] min-h-0">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Entrees</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] font-normal lato-regular">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] font-[300] lato-light">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="lato-light text-[17px] inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+{/* tab contened end */}
                         </CardBody>
                       </Card>  
                     </Tab>
                     <Tab key="KID'S MENU" title="KID'S MENU" className="lora font-bold text-[28px] text-[#000] tabclass">
                       <Card>
                         <CardBody>
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                         {/* tab contened start */}
+                    {/* <div className="grid grid-cols-2 gap-4"> */}
+                    <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 gap-4">
+
+
+<div className="float-left row-span-1">
+  <div className="border rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular font-normal">Entrees</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1 align-self">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal ">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div className="float-left row-span-2">
+  <div className="border bg-[#E7F0F3] rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Organic Pastas</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra Aglio e Olio</h4>
+          <p className="text-[17px] lato-light font-[300]">olive oil, garlic, chili, Grana Padano (add anchovy 2.00)</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Bucatini All’ Amatriciana</h4>
+          <p className="text-[17px] lato-light font-[300]">tomato, red onion, guanciale, chili, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Toasted Spaghetti with Clams & Shrimp</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra al Pomodoro</h4>
+          <p className="text-[17px] lato-light font-[300]">tomatoes, garlic, basil, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Canestri Cacio e Pepe</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Lasagna Verde Bolognese</h4>
+          <p className="text-[17px] lato-light font-[300]">bechamel, mozzarella, grana padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div className="float-left row-span-3">
+  <div className="border bg-[#E7F0F3] rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Organic Pastas</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra Aglio e Olio</h4>
+          <p className="text-[17px] lato-light font-[300]">olive oil, garlic, chili, Grana Padano (add anchovy 2.00)</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Bucatini All’ Amatriciana</h4>
+          <p className="text-[17px] lato-light font-[300]">tomato, red onion, guanciale, chili, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Toasted Spaghetti with Clams & Shrimp</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra al Pomodoro</h4>
+          <p className="text-[17px] lato-light font-[300]">tomatoes, garlic, basil, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Canestri Cacio e Pepe</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Lasagna Verde Bolognese</h4>
+          <p className="text-[17px] lato-light font-[300]">bechamel, mozzarella, grana padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div className="float-left row-span-4">
+  <div className="border rounded-xl p-[2rem] min-h-0">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Entrees</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] font-normal lato-regular">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] font-[300] lato-light">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="lato-light text-[17px] inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+{/* tab contened end */}
                         </CardBody>
                       </Card>  
                     </Tab>
                     <Tab key="DESSERTS" title="DESSERTS" className="lora font-bold text-[28px] text-[#000] tabclass tabclass1">
                       <Card>
                         <CardBody>
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          {/* tab contened start */}
+                    {/* <div className="grid grid-cols-2 gap-4"> */}
+                    <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 gap-4">
+
+
+<div className="float-left row-span-1">
+  <div className="border rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular font-normal">Entrees</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1 align-self">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal ">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div className="float-left row-span-2">
+  <div className="border bg-[#E7F0F3] rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Organic Pastas</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra Aglio e Olio</h4>
+          <p className="text-[17px] lato-light font-[300]">olive oil, garlic, chili, Grana Padano (add anchovy 2.00)</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Bucatini All’ Amatriciana</h4>
+          <p className="text-[17px] lato-light font-[300]">tomato, red onion, guanciale, chili, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Toasted Spaghetti with Clams & Shrimp</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra al Pomodoro</h4>
+          <p className="text-[17px] lato-light font-[300]">tomatoes, garlic, basil, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Canestri Cacio e Pepe</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Lasagna Verde Bolognese</h4>
+          <p className="text-[17px] lato-light font-[300]">bechamel, mozzarella, grana padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div className="float-left row-span-3">
+  <div className="border bg-[#E7F0F3] rounded-xl p-[2rem]">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Organic Pastas</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra Aglio e Olio</h4>
+          <p className="text-[17px] lato-light font-[300]">olive oil, garlic, chili, Grana Padano (add anchovy 2.00)</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Bucatini All’ Amatriciana</h4>
+          <p className="text-[17px] lato-light font-[300]">tomato, red onion, guanciale, chili, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Toasted Spaghetti with Clams & Shrimp</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Chitarra al Pomodoro</h4>
+          <p className="text-[17px] lato-light font-[300]">tomatoes, garlic, basil, Grana Padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Canestri Cacio e Pepe</h4>
+          <p className="text-[17px] lato-light font-[300]">pecorino, Grana Padano, black pepper</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Lasagna Verde Bolognese</h4>
+          <p className="text-[17px] lato-light font-[300]">bechamel, mozzarella, grana padano</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div className="float-left row-span-4">
+  <div className="border rounded-xl p-[2rem] min-h-0">
+    <h3 className="text-[28px] text-[#DF250E] lora-Regular">Entrees</h3>
+    <ul>
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] font-normal lato-regular">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] font-[300] lato-light">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="text-[17px] lato-light inline-block">$15</span>
+        </div>
+      </li>
+
+      <li className="grid grid-cols-3 gap-1">
+        <div className=" overflow-hidden">
+          <h4 className="text-[24px] lato-regular font-normal">Wood Oven Roasted Chicken</h4>
+          <p className="text-[17px] lato-light font-[300]">Refried beans, rice, grilled chicken, sour cream, salsa verde, cheese, pico.</p>
+        </div>
+        <div>
+          <span className="bg-[url('images/dotted-arrow.png')] bg-center bg-no-repeat p-[20px] inline-block"></span>
+        </div>
+        <div>
+          <span className="lato-light text-[17px] inline-block">$15</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+{/* tab contened end */}
                         </CardBody>
                       </Card>  
                     </Tab>
@@ -555,8 +1641,8 @@ export default function Home() {
             <p className="text-[20px] lato-bold"><span className="text-[#EB3224] text-[20px] font-bold lato-bold">KITCHEN OPEN: </span>MON-SAT 12-10PM / SUN 12PM-9:30PM</p>
           </div>
           <div className="flex justify-center mb-[4rem]">
-            <button className="border py-3 px-6 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[20px] lato-bold tracking-[2px]">BOOK A TABLE</button>
-            <button className="border py-3 px-6 bg-[#000] text-white rounded-[10px] text-[20px] lato-bold tracking-[2px]">ORDER ONLINE</button>
+            <button className="border py-3 px-6 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[20px] lato-bold tracking-[2px] hover:bg-[#fff] hover:text-[#EB3224]">BOOK A TABLE</button>
+            <button className="border py-3 px-6 bg-[#000] text-white rounded-[10px] text-[20px] lato-bold tracking-[2px] hover:bg-[#fff] hover:text-[#000]">ORDER ONLINE</button>
           </div>
 
 
@@ -655,7 +1741,7 @@ export default function Home() {
               <li className="text-white flex items-center lato-bold text-[35px] border py-2 pl-[10px] pr-[30px]"><span className="inline-block pr-[5px]"><img className="mx-auto" src="images/Calendar.png" alt="" /></span>dd-mm-yy</li>
               <li className="text-white flex items-center lato-bold text-[35px] border py-2 pl-[10px] pr-[30px]"><span className="inline-block pr-[5px]"><img className="mx-auto" src="images/clock.png" alt="" /></span>00:00</li>
               <li className="text-white flex items-center lato-bold text-[35px] border py-2 pl-[10px] pr-[30px]"><span className="inline-block pr-[5px]"><img className="mx-auto" src="images/woman.png" alt="" /></span>1</li>
-              <li><button className="bg-[#EB3224] text-white text-[35px] lato-bold rounded py-[20px] px-[30px]">BOOK A TABLE</button></li>
+              <li><button className="bg-[#EB3224] text-white text-[35px] lato-bold rounded py-[20px] px-[30px] hover:bg-[#fff] hover:text-[#EB3224]">BOOK A TABLE</button></li>
             </ul>
             </div>
 
