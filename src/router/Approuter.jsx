@@ -6,6 +6,7 @@ import Contactus from "../components/Contactus/Contactus";
 import Login from "../components/Login/Login";
 import Registration from "../components/Registration/Registration";
 import Faq from "../components/Faq/Faq";
+import Shop from "../components/shop/Shop";
 
 export default function Approuter() {
   return (
@@ -19,6 +20,7 @@ export default function Approuter() {
                   <Route path="login" element={<Login />}/>
                   <Route path="registration" element={<Registration />}/>
                   <Route path="faq" element={<Faq />}/>
+                  <Route path="shop" element={<Shop />}/>
               </Route>
           </Routes>
       </BrowserRouter>

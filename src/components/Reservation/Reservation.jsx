@@ -1,4 +1,4 @@
-import Reservationform from "../../shared/form/Reservationform";
+import Reservationform from "../../shared/components/form/Reservationform";
 
 export default function Reservation() {
   return (

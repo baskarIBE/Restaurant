@@ -120,6 +120,21 @@ div#react-aria1476874308-\:rr\: {
 }
 .group[data-selected=true] .group-data-\[selected\=true\]\:text-default-foreground{border:none}
 
+
+/* /*accordian css*? */
+.bsty button span{color:#90490A;}
+.bsty button {
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    padding: 10px !important;
+}
+.abodysty section {
+  padding: 10px;
+  background-color: #fff;
+}
+.display-ruby{display: ruby;}
+    /* /*accordian css end*? */
+
 /* .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: var(--swiper-pagination-bottom, 200px)};
   .swiper.swiper-initialized.swiper-horizontal.swiper-css-mode.mySwiper .swiper-button-next {

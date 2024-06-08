@@ -1,5 +1,5 @@
 import React from 'react'
-import Contactform from '../../shared/form/Contactform'
+import Contactform from '../../shared/components/form/Contactform'
 
 
 export default function Contactus() {

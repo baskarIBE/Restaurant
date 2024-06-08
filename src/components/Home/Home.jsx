@@ -1,6 +1,6 @@
 import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar} from "@nextui-org/react";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -9,12 +9,17 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
+import useAuth from "../../shared/hooks/useAuth";
+import { Link } from "react-router-dom";
 
 
 
 
 
 export default function Home() {
+  const {IsloggedIn,userdetails,logout}=useAuth();
+    console.log(IsloggedIn);
+console.log(userdetails());
   return (
     
     <section>
@@ -29,28 +34,28 @@ export default function Home() {
                   <NavbarContent className="hidden sm:flex gap-6" justify="center">
 
                       <NavbarItem>
-                          <Link color="foreground" className="text-white lato-bold text-[22px] tracking-[1px] hover:text-[#DF250E]" href="#">
+                          <Link to={'/'} color="foreground" className="text-white lato-bold text-[22px] tracking-[1px] hover:text-[#DF250E]" href="#">
                               Home
                           </Link>
                       </NavbarItem>
                       <NavbarItem isActive>
-                          <Link href="#" aria-current="page" className="text-white lato-bold text-[22px] tracking-[1px] hover:text-[#DF250E]" color="secondary">
+                          <Link to={'/'} href="#" aria-current="page" className="text-white lato-bold text-[22px] tracking-[1px] hover:text-[#DF250E]" color="secondary">
                               About Us
                           </Link>
                       </NavbarItem>
                       <NavbarItem>
-                          <Link color="foreground" className="text-white lato-bold text-[22px] tracking-[1px] hover:text-[#DF250E]" href="#">
+                          <Link to={'/'} color="foreground" className="text-white lato-bold text-[22px] tracking-[1px] hover:text-[#DF250E]" href="#">
                               Menu
                           </Link>
                       </NavbarItem>
                       <NavbarItem>
-                          <Link color="foreground" className="text-white lato-bold text-[22px] tracking-[1px] hover:text-[#DF250E]" href="#">
+                          <Link to={'/reservation'} color="foreground" className="text-white lato-bold text-[22px] tracking-[1px] hover:text-[#DF250E]" href="#">
                               Reservation
                           </Link>
                       </NavbarItem>
 
                       <NavbarItem>
-                          <Link color="foreground" href="#">
+                          <Link to={'/'} color="foreground" href="#">
                               <img className="mx-auto" src="images/logo.png" alt="" />
                           </Link>
                       </NavbarItem>
@@ -61,7 +66,7 @@ export default function Home() {
                           </Link>
                       </NavbarItem> */}
                       <Dropdown placement="bottom-end">
-                      <DropdownTrigger className="text-white lato-bold text-[22px] tracking-[1px] cursor-pointer hover:text-[#DF250E]">Shop+</DropdownTrigger>
+                      <DropdownTrigger className="text-white lato-bold text-[22px] tracking-[1px] cursor-pointer hover:text-[#DF250E]"><Link to={'/shop'}>Shop+</Link></DropdownTrigger>
                           <DropdownMenu aria-label="Profile Actions" variant="flat">
                               <DropdownItem key="settings">My Settings</DropdownItem>
                               <DropdownItem key="team_settings">Team Settings</DropdownItem>
@@ -80,17 +85,12 @@ export default function Home() {
                           </Link>
                       </NavbarItem> */}
                       <Dropdown placement="bottom-end">
-                      <DropdownTrigger className="text-white lato-bold text-[22px] tracking-[1px] cursor-pointer hover:text-[#DF250E]">Contact Us+</DropdownTrigger>
+                      <DropdownTrigger className="text-white lato-bold text-[22px] tracking-[1px] cursor-pointer hover:text-[#DF250E]"><Link to={'/Contactus'} color="foreground" className="text-white lato-bold text-[22px] tracking-[1px] hover:text-[#DF250E]" href="#">
+                              Contact Us+
+                          </Link></DropdownTrigger>
                           <DropdownMenu aria-label="Profile Actions" variant="flat">
-                              <DropdownItem key="settings">My Settings</DropdownItem>
-                              <DropdownItem key="team_settings">Team Settings</DropdownItem>
-                              <DropdownItem key="analytics">Analytics</DropdownItem>
-                              <DropdownItem key="system">System</DropdownItem>
-                              <DropdownItem key="configurations">Configurations</DropdownItem>
-                              <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
-                              <DropdownItem key="logout" color="danger">
-                                  Log Out
-                              </DropdownItem>
+                              <DropdownItem key="configurations"><Link to={'/faq'}>Faq</Link></DropdownItem>
+                              <DropdownItem key="help_and_feedback">Site Map</DropdownItem>
                           </DropdownMenu>
                       </Dropdown>
 
@@ -109,20 +109,19 @@ export default function Home() {
                                   src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
                               />
                           </DropdownTrigger>
+                          {IsloggedIn && (
                           <DropdownMenu aria-label="Profile Actions" variant="flat">
                               <DropdownItem key="profile" className="h-14 gap-2">
-                                  <p className="font-semibold">Signed in as</p>
-                                  <p className="font-semibold">zoey@example.com</p>
+                                  <p className="font-semibold">{userdetails().name}</p>
+                                  <p className="font-semibold">{userdetails().email}</p>
                               </DropdownItem>
-                              <DropdownItem key="settings">My Settings</DropdownItem>
-                              <DropdownItem key="team_settings">Team Settings</DropdownItem>
-                              <DropdownItem key="analytics">Analytics</DropdownItem>
-                              <DropdownItem key="system">System</DropdownItem>
-                              <DropdownItem key="configurations">Configurations</DropdownItem>
-                              <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
-                              <DropdownItem key="logout" color="danger">
+                              <DropdownItem onPress={logout} key="logout" color="danger">
                                   Log Out
                               </DropdownItem>
+                          </DropdownMenu>
+                          )}
+                          <DropdownMenu aria-label="Profile Actions" variant="flat">
+                          <DropdownItem key="system"><Link to={'/registration'}>Register</Link></DropdownItem>
                           </DropdownMenu>
                       </Dropdown>
                   </NavbarContent>
@@ -153,7 +152,7 @@ export default function Home() {
         <SwiperSlide className="h-screen flex items-center justify-center">
           <img className="w-full mx-auto" src="images/banner1.png" alt="" />
           <div className="absolute max-w-[90rem] w-full mx-auto">
-            <h1 className="text-white text-[36px] pb-[2rem] leading-[5rem] lato-black tracking-[3px]">"Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!"</h1>
+            <h1 className="text-white text-[36px]  leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
             <h2 className="text-[white] flex justify-center items-center text-[38px] pb-[2rem] lato-black tracking-[3px]"><span className="bg-[url('images/phone-call.png')] bg-center bg-no-repeat p-[35px]"></span>TEL: 1 (234) 5555</h2>
             <div className="flex justify-center mb-[4rem]">
             <button className="py-3 px-5 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px] hover:bg-[#fff] hover:text-[#EB3224]">BOOK A TABLE</button>
@@ -164,7 +163,7 @@ export default function Home() {
         <SwiperSlide className="h-screen flex items-center justify-center">
           <img className="w-full mx-auto" src="images/banner1.png" alt="" />
           <div className="absolute max-w-[90rem] w-full mx-auto">
-            <h1 className="text-white text-[36px] pb-[2rem] leading-[5rem] lato-black tracking-[3px]">"Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!"</h1>
+            <h1 className="text-white text-[36px]  leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
             <h2 className="text-[white] flex justify-center items-center text-[38px] pb-[2rem] lato-black tracking-[3px]"><span className="bg-[url('images/phone-call.png')] bg-center bg-no-repeat p-[35px]"></span>TEL: 1 (234) 5555</h2>
             <div className="flex justify-center mb-[4rem]">
             <button className="py-2 px-2 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px]">BOOK A TABLE</button>
@@ -175,7 +174,7 @@ export default function Home() {
         <SwiperSlide className="h-screen flex items-center justify-center">
           <img className="w-full mx-auto" src="images/banner1.png" alt="" />
           <div className="absolute max-w-[90rem] w-full mx-auto">
-            <h1 className="text-white text-[36px] pb-[2rem] leading-[5rem] lato-black tracking-[3px]">"Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!"</h1>
+            <h1 className="text-white text-[36px]  leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
             <h2 className="text-[white] flex justify-center items-center text-[38px] pb-[2rem] lato-black tracking-[3px]"><span className="bg-[url('images/phone-call.png')] bg-center bg-no-repeat p-[35px]"></span>TEL: 1 (234) 5555</h2>
             <div className="flex justify-center mb-[4rem]">
             <button className="py-2 px-2 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px]">BOOK A TABLE</button>
@@ -186,7 +185,7 @@ export default function Home() {
         <SwiperSlide className="h-screen flex items-center justify-center">
           <img className="w-full mx-auto" src="images/banner1.png" alt="" />
           <div className="absolute max-w-[90rem] w-full mx-auto">
-            <h1 className="text-white text-[36px] pb-[2rem] leading-[5rem] lato-black tracking-[3px]">"Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!"</h1>
+            <h1 className="text-white text-[36px] leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
             <h2 className="text-[white] flex justify-center items-center text-[38px] pb-[2rem] lato-black tracking-[3px]"><span className="bg-[url('images/phone-call.png')] bg-center bg-no-repeat p-[35px]"></span>TEL: 1 (234) 5555</h2>
             <div className="flex justify-center mb-[4rem]">
             <button className="py-2 px-2 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px]">BOOK A TABLE</button>
@@ -201,7 +200,7 @@ export default function Home() {
 
       {/* about section Start */}
      
-      <div className="bg-[url('images/about-bg.png')] w-full bg-no-repeat bg-cover py-[5rem]">
+      <div className="bg-[url('images/about-bg.png')] w-full bg-no-repeat bg-cover py-[5rem]" id="about">
       <div className="max-w-[60rem] w-full mx-auto px-4 mb-10">
         
             <div className="relative">
@@ -214,8 +213,8 @@ export default function Home() {
             
             
 
-            <p className="leading-[58px] text-[22px] lora font-bold tracking-[0px] text-justify font-bold text-center w-full pb-[2rem] font-lato">"Welcome to [Restaurant Name], where passion for food meets unparalleled hospitality. Nestled in the heart of [City/Area], our restaurant is a culinary oasis, dedicated to crafting unforgettable dining experiences. With a commitment to sourcing the finest ingredients and a creative approach to cooking, our talented chefs curate dishes that delight the senses and ignite the palate. Whether you're seeking a cozy meal with loved ones or a celebratory feast with friends, our warm ambiance and impeccable service ensure every visit is memorable. Join us and embark on a culinary journey that celebrates the art of food and the joy of shared moments."</p>
-            <p className="leading-[58px] text-[22px] lora font-bold tracking-[0px] text-justify font-bold text-center w-full pb-[2rem]">Feel free to adjust the details to fit the specific concept, cuisine, and atmosphere of the restaurant.</p>
+            <p className="leading-[58px] text-[22px] lora tracking-[0px] text-justify font-bold text-center w-full pb-[2rem] font-lato">Welcome to [Restaurant Name], where passion for food meets unparalleled hospitality. Nestled in the heart of [City/Area], our restaurant is a culinary oasis, dedicated to crafting unforgettable dining experiences. With a commitment to sourcing the finest ingredients and a creative approach to cooking, our talented chefs curate dishes that delight the senses and ignite the palate. Whether youre seeking a cozy meal with loved ones or a celebratory feast with friends, our warm ambiance and impeccable service ensure every visit is memorable. Join us and embark on a culinary journey that celebrates the art of food and the joy of shared moments.</p>
+            <p className="leading-[58px] text-[22px] lora tracking-[0px] text-justify font-bold text-center w-full pb-[2rem]">Feel free to adjust the details to fit the specific concept, cuisine, and atmosphere of the restaurant.</p>
         </div>
         </div>
         {/* about section end */}
@@ -1682,31 +1681,31 @@ export default function Home() {
           <div className="relative">
             {/* <h2 className="text-center font-bold text-5xl mb-8 bg-[url('images/title-logo.png')] bg-center p-3 w-full bg-no-repeat">About Us</h2> */}
             <h2 className="text-center lato-bold text-[38px] text-[#DF250E] py-[4rem]">Our Guests Speak</h2>
-            <div className="absolute top-[40px] left-[170px]">
+            <div className="absolute top-[40px] left-[210px]">
               <img className="mx-auto" src="images/title-logo.png" alt="" />
             </div>
           </div>
-          <p className="text-[22px] lora leading-relaxed tracking-[2px] mb-[3rem]">At [Restaurant Name], we take pride in providing exceptional dining experiences for our guests. But don't just take our word for it—here's what our valued customers have to say about their time with us:</p>
+          <p className="text-[22px] lora leading-relaxed tracking-[2px] mb-[3rem]">At [Restaurant Name], we take pride in providing exceptional dining experiences for our guests. But dont just take our word for it—heres what our valued customers have to say about their time with us:</p>
           <div className="max-w-[60rem] w-full mx-auto relative">
            
           <img className="" src="images/testimonal-img.png" alt="" />
           
           <div className="p-[2rem] max-w-[40rem] w-full mx-auto absolute top-[30%] right-[0] bg-[#000] rounded-[10px] bg-[url('images/testi-icon.png')] bg-no-repeat">
             {/* star start */}
-              <div class="flex items-left pb-[20px]">
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+              <div className="flex items-left pb-[20px]">
+                <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
-                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
-                <svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <svg className="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
               </div>
@@ -1732,7 +1731,7 @@ export default function Home() {
           <div className="relative pb-[10%]">
             {/* <h2 className="text-center font-bold text-5xl mb-8 bg-[url('images/title-logo.png')] bg-center p-3 w-full bg-no-repeat">About Us</h2> */}
             <h2 className="text-center lato-bold text-[38px] text-[#DF250E] py-[4rem]">MAKE A RESERVATION</h2>
-            <div className="absolute top-[40px] left-[170px]">
+            <div className="absolute top-[40px] left-[300px]">
               <img className="mx-auto" src="images/title-logo.png" alt="" />
             </div>
           </div>
@@ -1762,7 +1761,7 @@ export default function Home() {
           <li><Link className="border-r-1 pr-3 leading-1 text-white cursor-pointer hover:text-[#DF250E]">Home</Link></li>
           <li><Link className="border-r-1 pr-3 leading-1 text-white cursor-pointer hover:text-[#DF250E]">About Us</Link></li>
           <li><Link className="border-r-1 pr-3 leading-1 text-white cursor-pointer hover:text-[#DF250E]">Menu</Link></li>
-          <li><Link className="border-r-1 pr-3 leading-1 text-white cursor-pointer hover:text-[#DF250E]">Reservation</Link></li>
+          <li><Link to={'/reservation'} className="border-r-1 pr-3 leading-1 text-white cursor-pointer hover:text-[#DF250E]">Reservation</Link></li>
           <li><Link className="border-r-1 pr-3 leading-1 text-white cursor-pointer hover:text-[#DF250E]">Shop+</Link></li>
           <li><Link className="border-r-1 pr-3 leading-1 text-white cursor-pointer hover:text-[#DF250E]">Pages+</Link></li>
           <li><Link className=" text-white cursor-pointer hover:text-[#DF250E]">Contact Us</Link></li>

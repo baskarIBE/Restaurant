@@ -1,12 +1,20 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar} from "@nextui-org/react";
 // import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu} from "@nextui-org/react";
 // import {ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale} from "./Icons.jsx";
+
+import useAuth from "../../shared/hooks/useAuth.js";
+// import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
 
 
 export default function Header() {
+    
+    const {IsloggedIn,userdetails,logout}=useAuth();
+    console.log(IsloggedIn);
+console.log(userdetails());
   return (
     <header>
         <div className="py-6 bg-[#E24622]">
@@ -18,48 +26,60 @@ export default function Header() {
                   <NavbarContent className="hidden sm:flex gap-8" justify="center">
 
                       <NavbarItem>
-                          <Link color="foreground" className="text-white lato-bold hover:text-[#DF250E]" href="#">
+                          <Link to={''} color="foreground" className="text-white lato-bold hover:text-[#2C2C2C]" href="#">
                               Home
                           </Link>
                       </NavbarItem>
                       <NavbarItem isActive>
-                          <Link href="#" aria-current="page" className="text-white lato-bold hover:text-[#DF250E]" color="secondary">
+                          <Link to={'/'} href="#" aria-current="page" className="text-white lato-bold hover:text-[#2C2C2C]" color="secondary">
                               About Us
                           </Link>
                       </NavbarItem>
                       <NavbarItem>
-                          <Link color="foreground" className="text-white lato-bold hover:text-[#DF250E]" href="#">
+                          <Link color="foreground" className="text-white lato-bold hover:text-[#2C2C2C]" href="#">
                               Menu
                           </Link>
                       </NavbarItem>
                       <NavbarItem>
-                          <Link color="foreground" className="text-white lato-bold hover:text-[#DF250E]" href="#">
+                          <Link to={'reservation'} color="foreground" className="text-white lato-bold hover:text-[#2C2C2C]" href="#">
                               Reservation
                           </Link>
                       </NavbarItem>
 
                       <NavbarItem>
-                          <Link color="foreground" href="#">
+                          <Link to={'/'} color="foreground" href="#">
                               <img className="mx-auto" src="images/logo.png" alt="" />
                           </Link>
                       </NavbarItem>
 
-                      <NavbarItem>
-                          <Link color="foreground" className="text-white lato-bold hover:text-[#DF250E]" href="#">
+                      {/* <NavbarItem>
+                          <Link color="foreground" className="text-white lato-bold hover:text-[#2C2C2C]" href="#">
                               Reservation
                           </Link>
-                      </NavbarItem>
+                      </NavbarItem> */}
 
-                      <NavbarItem>
-                          <Link color="foreground" className="text-white lato-bold hover:text-[#DF250E]"  href="#">
-                              Shop+
-                          </Link>
-                      </NavbarItem>
-                      <NavbarItem>
-                          <Link color="foreground" className="text-white lato-bold hover:text-[#DF250E]" href="#">
-                              Contact Us+
-                          </Link>
-                      </NavbarItem>
+                          <Dropdown placement="bottom-end">
+                              <DropdownTrigger className="text-white lato-bold hover:text-[#2C2C2C] cursor-pointer"><Link to={'/shop'}>Shop+</Link></DropdownTrigger>
+                              <DropdownMenu aria-label="Profile Actions" variant="flat">
+                                  <DropdownItem key="settings">My Settings</DropdownItem>
+                                  <DropdownItem key="team_settings">Team Settings</DropdownItem>
+                                  <DropdownItem key="analytics">Analytics</DropdownItem>
+                                  <DropdownItem key="system">System</DropdownItem>
+                                  <DropdownItem key="configurations">Configurations</DropdownItem>
+                                  <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
+                                  <DropdownItem key="logout" color="danger">
+                                      Log Out
+                                  </DropdownItem>
+                              </DropdownMenu>
+                          </Dropdown>
+
+                          <Dropdown placement="bottom-end">
+                              <DropdownTrigger className="text-white lato-bold hover:text-[#2C2C2C] cursor-pointer"><Link to={'/Contactus'}>Contact Us</Link></DropdownTrigger>
+                              <DropdownMenu aria-label="Profile Actions" variant="flat">
+                              <DropdownItem  key="configurations"><Link to={'/faq'}>Faq</Link></DropdownItem>
+                              <DropdownItem key="help_and_feedback">Site Map</DropdownItem>
+                          </DropdownMenu>
+                          </Dropdown>
 
                   </NavbarContent>
 
@@ -76,27 +96,21 @@ export default function Header() {
                                   src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
                               />
                           </DropdownTrigger>
+                          {IsloggedIn && (
                           <DropdownMenu aria-label="Profile Actions" variant="flat">
                               <DropdownItem key="profile" className="h-14 gap-2">
-                                  <p className="font-semibold">Signed in as</p>
-                                  <p className="font-semibold">zoey@example.com</p>
+                                  <p className="font-semibold">{userdetails().name}</p>
+                                  <p className="font-semibold">{userdetails().email}</p>
                               </DropdownItem>
-                              <DropdownItem key="settings">My Settings</DropdownItem>
-                              <DropdownItem key="team_settings">Team Settings</DropdownItem>
-                              <DropdownItem key="analytics">Analytics</DropdownItem>
-                              <DropdownItem key="system">System</DropdownItem>
-                              <DropdownItem key="configurations">Configurations</DropdownItem>
-                              <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
-                              <DropdownItem key="logout" color="danger">
+                              <DropdownItem onPress={logout} key="logout" color="danger">
                                   Log Out
                               </DropdownItem>
                           </DropdownMenu>
+                          )}
+                          <DropdownMenu aria-label="Profile Actions" variant="flat">
+                          <DropdownItem key="system"><Link to={'/registration'}>Register</Link></DropdownItem>
+                          </DropdownMenu>
                       </Dropdown>
-                      <NavbarItem>
-                          <Link color="foreground" className="text-white lato-bold" href="#">
-                          <span className="border rounded-full py-1 px-3">0</span><img className="mx-auto" src="images/shopping-cart.png" alt="" />
-                          </Link>
-                      </NavbarItem>
                   </NavbarContent>
               </Navbar>
 

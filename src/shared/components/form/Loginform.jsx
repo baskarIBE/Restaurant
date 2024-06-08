@@ -1,7 +1,8 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 
-export default function Loginform() {
+export default function Loginform(props) {
+    const {handlechange,handlelogin}=props;
   return (
     <section>
           <div className="w-full">
@@ -19,13 +20,13 @@ export default function Loginform() {
             <img src="images/login-img.png" alt="" />
             </div>
             <div className='max-w-[60rem] w-full float-left px-[8%]'>
-                <form>
+                <form onSubmit={handlelogin}>
                           <div className='float-left w-full py-[8%]'>
                               <div className='flex justify-center pb-[20px]'>
-                                  <label className='lora text-[28px] text-[#E24622]' htmlFor=''>UserName</label>
+                                  <label className='lora text-[28px] text-[#E24622]' htmlFor=''>UserEmail</label>
                               </div>
                               <div>
-                                  <input type='text' name='name' className='px-4 py-2 border w-full outline-none rounded-[10px] py-[20px] bg-[#D9D9D9]' required />
+                                  <input type='email' name='email' className='px-4 py-2 border w-full outline-none rounded-[10px] py-[20px] bg-[#D9D9D9]' onChange={handlechange} required />
                               </div>
                           </div>
                           <div className='float-left w-full'>
@@ -33,12 +34,12 @@ export default function Loginform() {
                                   <label className='lora text-[28px] text-[#E24622]' htmlFor=''>Password</label>
                               </div>
                               <div>
-                                  <input type='password' name='password' className='px-4 py-2 border w-full outline-none rounded-[10px] py-[20px] bg-[#D9D9D9]' required />
+                                  <input type='password' name='password' className='px-4 py-2 border w-full outline-none rounded-[10px] py-[20px] bg-[#D9D9D9]' onChange={handlechange} required />
                               </div>
                           </div>
                           <div className='float-left flex gap-[18rem] pt-[10px]'>
                               <div>
-                                  <p className='text-[#5B5B5B] text-[16px] lora-Regular'>Don't have an account? <Link>Register here</Link></p>
+                                  <p className='text-[#5B5B5B] text-[16px] lora-Regular'>Don't have an account? <Link to={'/registration'}>Register here</Link></p>
                               </div>
                               <div>
                                  <p className='text-[#5B5B5B] text-[16px] lora-Regular'><Link>Forget Password ?</Link></p>
