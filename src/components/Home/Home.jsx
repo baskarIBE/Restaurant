@@ -147,7 +147,7 @@ console.log(userdetails());
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper homeslide"
       >
         <SwiperSlide className="h-screen flex items-center justify-center">
           <img className="w-full mx-auto" src="images/banner1.png" alt="" />
@@ -166,8 +166,8 @@ console.log(userdetails());
             <h1 className="text-white text-[36px]  leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
             <h2 className="text-[white] flex justify-center items-center text-[38px] pb-[2rem] lato-black tracking-[3px]"><span className="bg-[url('images/phone-call.png')] bg-center bg-no-repeat p-[35px]"></span>TEL: 1 (234) 5555</h2>
             <div className="flex justify-center mb-[4rem]">
-            <button className="py-2 px-2 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px]">BOOK A TABLE</button>
-            <button className="py-2 px-2 bg-[#000] text-white rounded-[10px] text-[28px] lato-black tracking-[3px]">ORDER ONLINE</button>
+            <button className="py-3 px-5 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px] hover:bg-[#fff] hover:text-[#EB3224]">BOOK A TABLE</button>
+            <button className="py-3 px-5 bg-[#000] text-white rounded-[10px] text-[28px] lato-black tracking-[3px] hover:bg-[#fff] hover:text-[#000]">ORDER ONLINE</button>
           </div>
           </div>
         </SwiperSlide>
@@ -177,8 +177,8 @@ console.log(userdetails());
             <h1 className="text-white text-[36px]  leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
             <h2 className="text-[white] flex justify-center items-center text-[38px] pb-[2rem] lato-black tracking-[3px]"><span className="bg-[url('images/phone-call.png')] bg-center bg-no-repeat p-[35px]"></span>TEL: 1 (234) 5555</h2>
             <div className="flex justify-center mb-[4rem]">
-            <button className="py-2 px-2 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px]">BOOK A TABLE</button>
-            <button className="py-2 px-2 bg-[#000] text-white rounded-[10px] text-[28px] lato-black tracking-[3px]">ORDER ONLINE</button>
+            <button className="py-3 px-5 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px] hover:bg-[#fff] hover:text-[#EB3224]">BOOK A TABLE</button>
+            <button className="py-3 px-5 bg-[#000] text-white rounded-[10px] text-[28px] lato-black tracking-[3px] hover:bg-[#fff] hover:text-[#000]">ORDER ONLINE</button>
           </div>
           </div>
         </SwiperSlide>
@@ -188,8 +188,8 @@ console.log(userdetails());
             <h1 className="text-white text-[36px] leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
             <h2 className="text-[white] flex justify-center items-center text-[38px] pb-[2rem] lato-black tracking-[3px]"><span className="bg-[url('images/phone-call.png')] bg-center bg-no-repeat p-[35px]"></span>TEL: 1 (234) 5555</h2>
             <div className="flex justify-center mb-[4rem]">
-            <button className="py-2 px-2 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px]">BOOK A TABLE</button>
-            <button className="py-2 px-2 bg-[#000] text-white rounded-[10px] text-[28px] lato-black tracking-[3px]">ORDER ONLINE</button>
+            <button className="py-3 px-5 bg-[#EB3224] text-white rounded-[10px] mr-[20px] text-[28px] lato-black tracking-[3px] hover:bg-[#fff] hover:text-[#EB3224]">BOOK A TABLE</button>
+            <button className="py-3 px-5 bg-[#000] text-white rounded-[10px] text-[28px] lato-black tracking-[3px] hover:bg-[#fff] hover:text-[#000]">ORDER ONLINE</button>
           </div>
           </div>
         </SwiperSlide>

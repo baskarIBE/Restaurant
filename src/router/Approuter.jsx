@@ -7,6 +7,7 @@ import Login from "../components/Login/Login";
 import Registration from "../components/Registration/Registration";
 import Faq from "../components/Faq/Faq";
 import Shop from "../components/shop/Shop";
+import Productall from "../components/shopall/Productall";
 
 export default function Approuter() {
   return (
@@ -21,6 +22,7 @@ export default function Approuter() {
                   <Route path="registration" element={<Registration />}/>
                   <Route path="faq" element={<Faq />}/>
                   <Route path="shop" element={<Shop />}/>
+                  <Route path="productall" element={<Productall />}/>
               </Route>
           </Routes>
       </BrowserRouter>

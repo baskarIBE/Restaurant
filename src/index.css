@@ -30,6 +30,7 @@
   height:15px
 }
 
+.homeslide.swiper-slide{padding:0px;}
 
 .lato-thin {
   font-family: "Lato", sans-serif;
@@ -133,7 +134,27 @@ div#react-aria1476874308-\:rr\: {
   background-color: #fff;
 }
 .display-ruby{display: ruby;}
+.hovbglis:hover{background: url('images/bg-shop.png') no-repeat; cursor: pointer;}
+.swiper-slide{padding: 10px;}
     /* /*accordian css end*? */
+/* productall */
+    .mySwiper .swiper-button-prev {
+      color:#fff;
+      background-image: url(/public/images/left.png);
+      padding: 30px 30px;
+      top:16px;
+
+    }
+    .mySwiper .swiper-button-next {
+      color:#fff;
+      background-image: url(/public/images/right.png);
+      padding: 30px 30px;
+      top:16px;
+      left: 50px;
+     
+    }
+    
+/* productall end */
 
 /* .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: var(--swiper-pagination-bottom, 200px)};

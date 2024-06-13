@@ -20,7 +20,7 @@ export default function Registration() {
       console.log(formdata);
       const res=await apiregister(formdata);
       console.log(res);
-      res.message=="successfully Registered"?succesregister(res):toast.error("Failed to register");
+      res.message=="successfully Registered"?succesregister(res):toast.error("Verify the Email");
     console.log(res.message);
     }else{
       toast.error("Passwords do not match");
