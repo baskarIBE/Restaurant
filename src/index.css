@@ -11,15 +11,15 @@
 
 
 
-.mySwiper .swiper-button-prev {
+.homeslide .swiper-button-prev {
   color:#fff;
-  background-image: url(/public/images/arrow-right.png);
-  padding: 30px 30px
+  background-image: url(/public/images/arrow-right.png) !important;
+  padding: 30px 30px !important;
 }
-.mySwiper .swiper-button-next {
+.homeslide .swiper-button-next {
   color:#fff;
-  background-image: url(/public/images/arrow-left.png);
-  padding: 30px 30px
+  background-image: url(/public/images/arrow-left.png) !important;
+  padding: 30px 30px !important;
 }
 .swiper-button-next:after{font-size: 0px;}
 .swiper-button-prev:after{font-size: 0px;}
@@ -120,6 +120,7 @@ div#react-aria1476874308-\:rr\: {
   background-color: #fff;
 }
 .group[data-selected=true] .group-data-\[selected\=true\]\:text-default-foreground{border:none}
+.homslicon {padding: 0px !important;}
 
 
 /* /*accordian css*? */
@@ -138,14 +139,14 @@ div#react-aria1476874308-\:rr\: {
 .swiper-slide{padding: 10px;}
     /* /*accordian css end*? */
 /* productall */
-    .mySwiper .swiper-button-prev {
+    .proall .swiper-button-prev {
       color:#fff;
       background-image: url(/public/images/left.png);
       padding: 30px 30px;
       top:16px;
 
     }
-    .mySwiper .swiper-button-next {
+    .proall .swiper-button-next {
       color:#fff;
       background-image: url(/public/images/right.png);
       padding: 30px 30px;

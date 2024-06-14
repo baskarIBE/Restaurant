@@ -120,8 +120,8 @@ console.log(userdetails());
                               </DropdownItem>
                           </DropdownMenu>
                           )}
-                          <DropdownMenu aria-label="Profile Actions" variant="flat">
-                          <DropdownItem key="system"><Link to={'/registration'}>Register</Link></DropdownItem>
+                          <DropdownMenu className="bg-transparent" aria-label="Profile Actions" variant="flat">
+                          <DropdownItem className="bg-transparent" key="system"><Link className="bg-transparent lato-bold text-[22px] tracking-[1px] cursor-pointer hover:text-[#DF250E]" to={'/registration'}>Register</Link></DropdownItem>
                           </DropdownMenu>
                       </Dropdown>
                   </NavbarContent>
@@ -149,7 +149,7 @@ console.log(userdetails());
         modules={[Pagination, Navigation]}
         className="mySwiper homeslide"
       >
-        <SwiperSlide className="h-screen flex items-center justify-center">
+        <SwiperSlide className="h-screen flex items-center justify-center homslicon">
           <img className="w-full mx-auto" src="images/banner1.png" alt="" />
           <div className="absolute max-w-[90rem] w-full mx-auto">
             <h1 className="text-white text-[36px]  leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
@@ -160,7 +160,7 @@ console.log(userdetails());
           </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="h-screen flex items-center justify-center">
+        <SwiperSlide className="h-screen flex items-center justify-center homslicon">
           <img className="w-full mx-auto" src="images/banner1.png" alt="" />
           <div className="absolute max-w-[90rem] w-full mx-auto">
             <h1 className="text-white text-[36px]  leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
@@ -171,7 +171,7 @@ console.log(userdetails());
           </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="h-screen flex items-center justify-center">
+        <SwiperSlide className="h-screen flex items-center justify-center homslicon">
           <img className="w-full mx-auto" src="images/banner1.png" alt="" />
           <div className="absolute max-w-[90rem] w-full mx-auto">
             <h1 className="text-white text-[36px]  leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
@@ -182,7 +182,7 @@ console.log(userdetails());
           </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="h-screen flex items-center justify-center">
+        <SwiperSlide className="h-screen flex items-center justify-center homslicon">
           <img className="w-full mx-auto" src="images/banner1.png" alt="" />
           <div className="absolute max-w-[90rem] w-full mx-auto">
             <h1 className="text-white text-[36px] leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
