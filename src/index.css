@@ -154,6 +154,10 @@ div#react-aria1476874308-\:rr\: {
       left: 50px;
      
     }
+
+    .bg-overlay\/50 {
+      background-color: hsl(0deg 0% 0% / 20%);
+  }
     
 /* productall end */
 

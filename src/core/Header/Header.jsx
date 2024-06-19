@@ -5,13 +5,15 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, DropdownItem, DropdownTr
 import useAuth from "../../shared/hooks/useAuth.js";
 // import { useState } from "react";
 import { Link } from "react-router-dom";
+import useCart from "../../shared/hooks/useCard.js";
 
 
 
 
 
 export default function Header() {
-    
+    const {count}=useCart();
+
     const {IsloggedIn,userdetails,logout}=useAuth();
     console.log(IsloggedIn);
 console.log(userdetails());
@@ -83,6 +85,12 @@ console.log(userdetails());
 
                   </NavbarContent>
 
+                  <NavbarItem className="flex gap-2"><span className="py-[10px] px-[15px] rounded-[50%] bg-[#fff] lato-bold text-[22px]">{count}</span>
+                          <Link color="foreground" href="#">
+                          <img className="mx-auto" src="images/shopping-cart.png" alt="" />
+                          </Link>
+                      </NavbarItem>
+
                   <NavbarContent as="div" justify="end">
                       <Dropdown placement="bottom-end">
                           <DropdownTrigger>
@@ -112,6 +120,7 @@ console.log(userdetails());
                           </DropdownMenu>
                       </Dropdown>
                   </NavbarContent>
+                  
               </Navbar>
 
               </div>

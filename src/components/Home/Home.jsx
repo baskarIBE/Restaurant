@@ -149,7 +149,7 @@ console.log(userdetails());
         modules={[Pagination, Navigation]}
         className="mySwiper homeslide"
       >
-        <SwiperSlide className="h-screen flex items-center justify-center homslicon">
+        <SwiperSlide className="h-screen flex items-center justify-center homslicon bg-cover bg-center">
           <img className="w-full mx-auto" src="images/banner1.png" alt="" />
           <div className="absolute max-w-[90rem] w-full mx-auto">
             <h1 className="text-white text-[36px]  leading-[5rem] lato-black tracking-[3px]">Indulge in Culinary Delights at [Restaurant Name] - Where Every Bite Tells a Story! Explore Our Exquisite Menu of Flavors, From Traditional Classics to Contemporary Creations. Join Us for a Memorable Dining Experience Today!</h1>
@@ -213,7 +213,7 @@ console.log(userdetails());
             
             
 
-            <p className="leading-[58px] text-[22px] lora tracking-[0px] text-justify font-bold text-center w-full pb-[2rem] font-lato">Welcome to [Restaurant Name], where passion for food meets unparalleled hospitality. Nestled in the heart of [City/Area], our restaurant is a culinary oasis, dedicated to crafting unforgettable dining experiences. With a commitment to sourcing the finest ingredients and a creative approach to cooking, our talented chefs curate dishes that delight the senses and ignite the palate. Whether youre seeking a cozy meal with loved ones or a celebratory feast with friends, our warm ambiance and impeccable service ensure every visit is memorable. Join us and embark on a culinary journey that celebrates the art of food and the joy of shared moments.</p>
+            <p className="leading-[58px] text-[22px] lora tracking-[0px] text-justify font-bold text-center w-full pb-[2rem]">Welcome to [Restaurant Name], where passion for food meets unparalleled hospitality. Nestled in the heart of [City/Area], our restaurant is a culinary oasis, dedicated to crafting unforgettable dining experiences. With a commitment to sourcing the finest ingredients and a creative approach to cooking, our talented chefs curate dishes that delight the senses and ignite the palate. Whether youre seeking a cozy meal with loved ones or a celebratory feast with friends, our warm ambiance and impeccable service ensure every visit is memorable. Join us and embark on a culinary journey that celebrates the art of food and the joy of shared moments.</p>
             <p className="leading-[58px] text-[22px] lora tracking-[0px] text-justify font-bold text-center w-full pb-[2rem]">Feel free to adjust the details to fit the specific concept, cuisine, and atmosphere of the restaurant.</p>
         </div>
         </div>
